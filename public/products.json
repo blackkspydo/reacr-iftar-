@@ -1,0 +1,65 @@
+[
+    {
+        "id": "1",
+        "name": "Muri",
+        "price": "65",
+        "picture": "images/muri.jpg",
+        "quantity": "1 kg"
+    },
+    {
+        "id": "2",
+        "name": "Chola Boot",
+        "price": "85",
+        "picture": "images/cholaboot.jpg",
+        "quantity": "1 kg"
+    },
+    {
+        "id": "3",
+        "name": "Dates",
+        "price": "250",
+        "picture": "images/dates.jpg",
+        "quantity": "1 kg"
+    },
+    {
+        "id": "4",
+        "name": "Orange Tang",
+        "price": "1500",
+        "picture": "images/orange-tang.jpg",
+        "quantity": "2.5 kg (jar)"
+    },
+    {
+        "id": "5",
+        "name": "Sugar",
+        "price": "85",
+        "picture": "images/sugar.jpg",
+        "quantity": "1 kg"
+    },
+    {
+        "id": "6",
+        "name": "Doi",
+        "price": "150",
+        "picture": "images/yougart.jpg",
+        "quantity": "1 ltr"
+    },
+    {
+        "id": "7",
+        "name": "Halim",
+        "price": "55",
+        "picture": "images/haalim.jpg",
+        "quantity": "200 gm"
+    },
+    {
+        "id": "8",
+        "name": "Banana",
+        "price": "25",
+        "picture": "images/banana.jpg",
+        "quantity": "4 pcs"
+    },
+    {
+        "id": "9",
+        "name": "Malta",
+        "price": "220",
+        "picture": "images/malta.jpg",
+        "quantity": "1 kg"
+    }
+]

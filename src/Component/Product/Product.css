@@ -1,0 +1,32 @@
+.product-container{
+    background-color: #fff6f6;
+    width:300px;
+    height:500px;
+    margin: 20px 0px;
+}
+
+.product-container img{
+    width:280px;
+    height :280px;
+    padding: 15px;
+    padding-left: 8px;
+    border-radius: 20px;
+}
+
+.button p{
+    margin-right:5px;
+}
+.button{
+    display :flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    padding:12px;
+    border:0px;
+    border-radius: 10px;
+    background-color: #ffeea2;
+}
+.button:hover{
+    background-color: #ffdc69;
+    
+}
