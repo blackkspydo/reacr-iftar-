@@ -1,32 +1,37 @@
-import React, { useState } from 'react';
-import './Cart.css'
+import React, { useState } from "react";
+import "./Cart.css";
 
 const Cart = (props) => {
-    const { cart } = props;
+	const { cart, handleRandom, resetCart, randomItem, randomClickHandler } = props;
 
-    const [item, setItem] = useState(0)
-    const randomPick = () => {
-        const newItem = cart[Math.floor(Math.random() * cart.length)];
-        // console.log(item)
-        setItem(newItem)
-    }
+	const total = cart.reduce((total, item) => total + parseInt(item.price), 0);
 
+	console.log(total);
+	// console.log(cart[item])
+	return (
+		<div className="cart">
+			<h3>Selected Items</h3>
+			{cart.map((product) => (
+				<>
+					<li>
+						{product.name}
+						{"  "}
+						<span>{product.price}</span>
+					</li>
+				</>
+			))}
+			{cart.length > 0 && <h1>{total}</h1>}
+			<p>Random Item</p>
+			{randomItem.map((product) => (
+				<>
+					<li>{product.name} <button onClick={()=>randomClickHandler(product)}>+</button></li>
+				</>
+			))}
+			<button onClick={() => handleRandom()}>choose randomly</button>
 
-
-    console.log(item)
-    // console.log(cart[item])
-    return (
-        <div className='cart'>
-            <h3>Selected Items</h3>
-            {cart.map(product => <li>{product.name}</li>)}
-            {
-                item && <h1>{item.name}</h1>
-            }
-            <button onClick={randomPick}>choose randomly</button>
-
-            <button>reset</button>
-        </div >
-    );
+			<button onClick={() => resetCart()}>reset</button>
+		</div>
+	);
 };
 
 export default Cart;
